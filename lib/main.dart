@@ -16,9 +16,8 @@ import 'controllers/auth_controller.dart';
 import 'controllers/org_controller.dart';
 import 'views/pages/organization/create_organization.dart';
 import 'views/pages/organization/switch_org_page.dart';
-
 Preferences preferences = Preferences();
-String userID;
+String userID="H";
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized(); //ensuring weather the app is being initialized or not
   userID = await preferences.getUserId(); //getting user id
